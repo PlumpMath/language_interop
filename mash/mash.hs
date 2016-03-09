@@ -10,6 +10,15 @@ foreign import ccall "sinapprox"
 foreign import ccall "c_testing"
     c_testing :: IO ()
 
+foreign import ccall "startJava"
+    startJava :: IO ()
+
+foreign import ccall "quitJava"
+    quitJava :: IO ()
+
+foreign import ccall "sendHelloToJava"
+    sendHelloToJava :: IO ()
+
 -- Rust
 
 foreign import ccall "rust_testing"
@@ -41,3 +50,6 @@ main = do
     delc c
     rust_testing
     c_testing
+    startJava
+    sendHelloToJava
+    quitJava
