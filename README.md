@@ -9,6 +9,8 @@ Making languages work with each other is fun.
     > make
     > cd ../hs
     > make
+    > cd ../java
+    > make
     > cd ../mash
     > make
     > ./mash
